@@ -54,10 +54,13 @@ group :development, :test do
 end
 
 group :test do
+  gem "cucumber-rails"
   gem "guard"
   gem "guard-rspec"
+  gem "guard-cucumber"
   gem "rspec"
   gem "rspec-rails"
+  gem "capybara"
 end
 
 group :development do
