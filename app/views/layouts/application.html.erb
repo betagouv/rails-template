@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html data-fr-scheme="system">
   <head>
     <title>BetaRailsTemplate</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "dsfr.min.css", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "dsfr.module.min.js", type: 'module' %>
+    <%= javascript_include_tag "dsfr.nomodule.min.js" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'shared/header' %>
+
+    <div class="fr-container">
+      <%= render 'shared/menu' %>
+
+      <main class="fr-py-2w">
+        <%= yield %>
+      </main>
+    </div>
+
+    <%= render 'shared/footer' %>
   </body>
 </html>
