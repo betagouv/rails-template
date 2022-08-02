@@ -14,12 +14,13 @@
   </head>
 
   <body>
+    <%= render 'shared/skiplinks' %>
     <%= render 'shared/header' %>
 
     <div class="fr-container">
       <%= render 'shared/menu' %>
 
-      <main class="fr-py-2w">
+      <main class="fr-py-2w" id="main">
         <%= yield %>
       </main>
     </div>
