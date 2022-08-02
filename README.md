@@ -21,9 +21,22 @@ outils choisis :
 docker-compose up
 ```
 
+Attention ! Comme on miroite notre arborescence de fichiers locale sur
+celle de Docker, une fois le volume monté il faut s'assurer que les
+packages NPM sont aussi installés en local, sinon on monte un dossier
+vide par dessus le `node_modules` de Docker qui lui est installé
+pendant la construction de l'image.
+
+Donc la première fois, après `docker-compose up` :
+
+```shell
+npm i # sur la machine hôte, pas dans Docker
+```
+
 ### En local
 
 ```
 bundle
+npm i
 bundle exec rails s
 ```
