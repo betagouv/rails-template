@@ -1,24 +1,26 @@
-# README
+# Beta x Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
 
-Things you may want to cover:
+Ce repo est un kit de démarrage basé sur Ruby on Rails 7 avec le
+[DSFR](https://www.systeme-de-design.gouv.fr/), ansi que certains
+outils choisis :
 
-* Ruby version
+* RSpec comme framework de tests ;
+* Cucumber et Capybara pour les tests BDD ;
+* Rubocop (RSpec et Rails) pour le linting.
 
-* System dependencies
+## Démarrage
 
-* Configuration
+### Avec Docker
 
-* Database creation
+```shell
+docker-compose up
+```
 
-* Database initialization
+### En local
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bundle
+bundle exec rails s
+```
