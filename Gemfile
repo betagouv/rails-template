@@ -58,7 +58,7 @@ end
 
 group :test do
   gem "capybara"
-  gem "cucumber-rails"
+  gem "cucumber-rails", require: false
   gem "guard"
   gem "guard-cucumber"
   gem "guard-rspec"
