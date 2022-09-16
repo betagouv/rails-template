@@ -16,4 +16,6 @@ COPY . .
 
 RUN npm i
 
+ENTRYPOINT ["./entrypoint.sh"]
+
 CMD bundle exec rails s -b 0.0.0.0
