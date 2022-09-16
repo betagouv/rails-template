@@ -5,10 +5,17 @@
         <div class="fr-header__brand fr-enlarge-link">
           <div class="fr-header__brand-top">
             <div class="fr-header__logo">
-              <p class="fr-logo">
-                Intitulé
-                <br>officiel
-              </p>
+              <a href="/" title="Accueil - Nom de l’entité (ministère, secrétariat d‘état, gouvernement)">
+                <p class="fr-logo">
+                  Intitulé
+                  <br>officiel
+                </p>
+              </a>
+            </div>
+            <div class="fr-header__navbar">
+              <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-491" aria-haspopup="menu" id="button-492" title="Menu">
+                Menu
+              </button>
             </div>
           </div>
           <div class="fr-header__service">
@@ -21,6 +28,16 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="fr-header__menu fr-modal" id="modal-491" aria-labelledby="button-492">
+    <div class="fr-container">
+      <button class="fr-btn--close fr-btn" aria-controls="modal-491" title="Fermer">
+        Fermer
+      </button>
+      <div class="fr-header__menu-links">
+      </div>
+      <%= render 'shared/menu' %>
     </div>
   </div>
 </header>
