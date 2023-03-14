@@ -213,6 +213,7 @@ GEM
     parallel (1.22.1)
     parser (3.2.1.0)
       ast (~> 2.4.1)
+    pg (1.4.6)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -307,9 +308,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.0-aarch64-linux)
-    sqlite3 (1.6.0-arm64-darwin)
-    sqlite3 (1.6.0-x86_64-linux)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     sys-uname (1.2.2)
@@ -358,6 +356,7 @@ DEPENDENCIES
   guard-rspec
   importmap-rails
   jbuilder
+  pg
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
   rspec
@@ -366,7 +365,6 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rspec
   sprockets-rails
-  sqlite3 (~> 1.4)
   stimulus-rails
   turbo-rails
   tzinfo-data

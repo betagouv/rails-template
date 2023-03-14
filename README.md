@@ -16,16 +16,6 @@ ansi que certains outils choisis :
 
 ## Démarrage
 
-### Avec Docker
-
 ```shell
 docker-compose up
-```
-
-### En local
-
-```
-bundle
-npm i
-bundle exec rails s
 ```
