@@ -30,4 +30,6 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  global:
+    service_name: "Your service"
+    service_description: "Your service's description"

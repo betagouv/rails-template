@@ -7,8 +7,7 @@
             <div class="fr-header__logo">
               <a href="/" title="Accueil - Nom de l’entité (ministère, secrétariat d‘état, gouvernement)">
                 <p class="fr-logo">
-                  Intitulé
-                  <br>officiel
+                  <%= t("global.sponsor_html") %>
                 </p>
               </a>
             </div>
@@ -19,12 +18,12 @@
             </div>
           </div>
           <div class="fr-header__service">
-            <a href="/" title="Accueil - [À MODIFIER - Nom du site / service] - Nom de l’entité (ministère, secrétariat d‘état, gouvernement)">
+            <a href="/" title="Accueil - <%= t("global.service_name") %>">
               <p class="fr-header__service-title">
-                Nom du site / service
+                <%= t("global.service_name") %>
               </p>
             </a>
-            <p class="fr-header__service-tagline">baseline - précisions sur l‘organisation</p>
+            <p class="fr-header__service-tagline"><%= t("global.service_description") %></p>
           </div>
         </div>
       </div>
