@@ -14,6 +14,11 @@ ansi que certains outils choisis :
 * Cucumber et Capybara pour les tests BDD ;
 * Rubocop (RSpec et Rails) pour le linting.
 
+La base de données est configurée avec PostgreSQL.
+
+MailCatcher est utilisé en développement pour intercepter les e-mails
+envoyés.
+
 ## Démarrage
 
 ```shell
