@@ -120,6 +120,13 @@ GEM
     date (3.3.3)
     debug (1.7.1)
     diff-lcs (1.5.0)
+    dsfr-view-components (0.1.1)
+      actionpack (>= 6.1)
+      activemodel (>= 6.1)
+      html-attributes-utils (~> 1)
+      pagy (~> 6)
+      railties (>= 6.1)
+      view_component (~> 2)
     erubi (1.12.0)
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
@@ -149,6 +156,8 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    html-attributes-utils (1.0.0)
+      activesupport (>= 6.1.4.4)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.1.5)
@@ -200,6 +209,7 @@ GEM
     notiffany (0.1.3)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    pagy (6.0.2)
     parallel (1.22.1)
     parser (3.2.1.0)
       ast (~> 2.4.1)
@@ -313,6 +323,10 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
+    view_component (2.82.0)
+      activesupport (>= 5.2.0, < 8.0)
+      concurrent-ruby (~> 1.0)
+      method_source (~> 1.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -336,6 +350,7 @@ DEPENDENCIES
   capybara
   cucumber-rails
   debug
+  dsfr-view-components
   factory_bot_rails
   faker
   guard

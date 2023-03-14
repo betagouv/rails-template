@@ -6,8 +6,9 @@
 ## Introduction
 
 Ce repo est un kit de démarrage basé sur Ruby on Rails 7 avec le
-[DSFR](https://www.systeme-de-design.gouv.fr/), ansi que certains
-outils choisis :
+[DSFR](https://www.systeme-de-design.gouv.fr/), notre [librairie de
+composants DSFR](https://github.com/betagouv/dsfr-view-components)
+ansi que certains outils choisis :
 
 * RSpec comme framework de tests ;
 * Cucumber et Capybara pour les tests BDD ;
