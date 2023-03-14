@@ -1,6 +1,9 @@
 DOCKER-RUN = docker-compose run --rm
 BUNDLE-EXEC = bundle exec
 
+build:
+	docker-compose build
+
 up:
 	docker-compose up
 
