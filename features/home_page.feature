@@ -6,4 +6,5 @@
 Fonctionnalité: La page d'accueil me salue
   Scénario:
     Quand je me rends sur la page d'accueil
-    Alors la page contient "Intitulé officiel"
+    Alors la page contient "Direction Interministérielle du Numérique"
+    Et la page contient "Nom de votre service"

@@ -1,8 +1,10 @@
-FROM ruby:3.2.2
+FROM ruby:3.2-slim
 
 EXPOSE 3000
 
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - && apt-get install -y nodejs --no-install-recommends
+RUN apt-get update && apt-get upgrade -y && apt-get install --no-install-recommends -y curl build-essential docker libpq-dev
+
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - && apt-get install -y --no-install-recommends nodejs
 
 # do the bundle install in another directory with the strict essential
 # (Gemfile and Gemfile.lock) to allow further steps to be cached
@@ -20,6 +22,8 @@ WORKDIR /app
 COPY package.json package-lock.json .
 
 RUN npm i
+
+COPY . .
 
 ENTRYPOINT ["./entrypoint.sh"]
 
