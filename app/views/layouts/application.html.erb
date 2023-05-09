@@ -16,10 +16,10 @@
   <body>
     <%= render 'shared/skiplinks' %>
     <%= render 'shared/header' %>
-    <%= render 'shared/flash' %>
 
     <div class="fr-container">
       <main class="fr-py-2w" id="main">
+        <%= render 'shared/flash' %>
         <%= yield %>
       </main>
     </div>
