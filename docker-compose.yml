@@ -21,7 +21,3 @@ services:
       PGPORT: 5433
     ports:
       - "5433:5433"
-  mailcatcher:
-    image: sj26/mailcatcher
-    ports:
-      - "1080:1080"
