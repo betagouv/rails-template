@@ -7,11 +7,8 @@ services:
     ports:
       - "3000:3000"
       - "12345:12345"
-    environment:
-      DATABASE_URL: 'postgresql://postgres:dummy@db:5433'
-      RUBY_DEBUG_PORT: 12345
-      RUBY_DEBUG_HOST: 0.0.0.0
-      RUBY_DEBUG_NO_RELINE: true
+    env_file:
+       - '.env.local'
     depends_on:
       - db
   db:

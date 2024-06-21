@@ -16,8 +16,10 @@ ansi que certains outils choisis :
 
 La base de données est configurée avec PostgreSQL.
 
-MailCatcher est utilisé en développement pour intercepter les e-mails
-envoyés.
+## Environnement
+
+Tout l'environnement est configuré pour et depuis Docker. Des
+commandes utiles sont fournies dans le [Makefile](./Makefile)
 
 ## Démarrage
 
