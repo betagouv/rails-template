@@ -1,6 +1,6 @@
 # Beta x Rails
 
-![image](https://user-images.githubusercontent.com/107635/182360512-9fd4be19-bdf9-4a02-8f9c-94abf94e0164.png)
+![Capture d’écran 2024-07-09 à 12 02 42](https://github.com/betagouv/rails-template/assets/107635/51592c9e-3f74-4384-9561-354c7085b16b)
 
 
 ## Introduction
@@ -19,7 +19,7 @@ La base de données est configurée avec PostgreSQL.
 ## Environnement
 
 Tout l'environnement est configuré pour et depuis Docker. Des
-commandes utiles sont fournies dans le [Makefile](./Makefile)
+commandes utiles sont fournies dans le [Makefile](./Makefile).
 
 ## Démarrage
 
