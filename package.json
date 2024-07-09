@@ -1,6 +1,6 @@
 {
   "name": "beta-rails-template",
   "dependencies": {
-    "@gouvfr/dsfr": "^1.9"
+    "@gouvfr/dsfr": "^1.12"
   }
 }
