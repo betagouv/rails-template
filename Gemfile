@@ -68,8 +68,11 @@ group :test do
   gem "guard-rspec"
   gem "rspec"
   gem "rubocop"
+  gem "rubocop-capybara"
+  gem "rubocop-factory_bot"
   gem "rubocop-rails"
   gem "rubocop-rspec"
+  gem "rubocop-rspec_rails"
 end
 
 group :development do

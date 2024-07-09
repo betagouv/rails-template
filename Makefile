@@ -13,6 +13,9 @@ down:
 sh:
 	$(DOCKER-RUN) web $(BUNDLE-EXEC) bash
 
+lint:
+	$(DOCKER-RUN) web $(BUNDLE-EXEC) rubocop
+
 guard:
 	$(DOCKER-RUN) web $(BUNDLE-EXEC) guard
 
