@@ -16,13 +16,26 @@ ansi que certains outils choisis :
 
 La base de données est configurée avec PostgreSQL.
 
-## Environnement
-
-Tout l'environnement est configuré pour et depuis Docker. Des
-commandes utiles sont fournies dans le [Makefile](./Makefile).
-
 ## Démarrage
 
 ```shell
 docker-compose up
 ```
+
+## Environnement
+
+Tout l'environnement est configuré pour et depuis Docker. Des
+commandes utiles sont fournies dans le [Makefile](./Makefile).
+
+## Intégration continue
+
+Une cinématique GitHub Action est founie qui lance :
+
+- le linting ;
+- les tests unitaires ;
+- les tests d'intégration.
+
+Cette cinématique commence d'abord par construire l'image Docker
+qu'elle transmet ensuite aux trois étapes ci-dessus, ce qui évite de
+répéter trois fois l'installation et la configuration du projet sans
+sacrifier le parallèlisme de ces étapes.
