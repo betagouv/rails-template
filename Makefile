@@ -11,7 +11,7 @@ down:
 	docker compose down
 
 sh:
-	$(DOCKER-RUN) web $(BUNDLE-EXEC) bash
+	$(DOCKER-RUN) web bash
 
 lint:
 	$(DOCKER-RUN) web $(BUNDLE-EXEC) rubocop
