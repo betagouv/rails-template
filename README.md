@@ -39,3 +39,15 @@ Cette cinématique commence d'abord par construire l'image Docker
 qu'elle transmet ensuite aux trois étapes ci-dessus, ce qui évite de
 répéter trois fois l'installation et la configuration du projet sans
 sacrifier le parallèlisme de ces étapes.
+
+## Déploiement
+
+### Scalingo
+
+Pour utiliser pleinement les atouts de la plateforme,
+vous devrez ajouter un fichier `.buildpacks` à la racine du projet avec :
+
+```
+https://github.com/Scalingo/nodejs-buildpack.git
+https://github.com/Scalingo/ruby-buildpack.git
+```
