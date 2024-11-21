@@ -12,6 +12,8 @@ services:
     depends_on:
       - db
   db:
+    # if you use Scalingo, stick to postgres:15
+    # https://doc.scalingo.com/databases/postgresql/overview#life-cycle
     image: postgres
     environment:
       POSTGRES_PASSWORD: 'dummy'
