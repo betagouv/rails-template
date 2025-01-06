@@ -5,7 +5,7 @@
 
 ## Introduction
 
-Ce repo est un kit de démarrage basé sur Ruby on Rails 7 avec le
+Ce repo est un kit de démarrage basé sur Ruby on Rails 8 avec le
 [DSFR](https://www.systeme-de-design.gouv.fr/), notre [librairie de
 composants DSFR](https://github.com/betagouv/dsfr-view-components)
 ansi que certains outils choisis :
