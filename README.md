@@ -44,8 +44,11 @@ sacrifier le parallèlisme de ces étapes.
 
 ### Scalingo
 
-Pour utiliser pleinement les atouts de la plateforme,
-vous devrez ajouter un fichier `.buildpacks` à la racine du projet avec :
+L'application a besoin des `node_modules` pour fonctionner car le DSFR
+est un paquet NPM. Pour garantir leur installation, assurez-vous
+d'indiquer à Scalingo que vous avez besoin du buildpack NodeJS en plus
+du buildpack Ruby avec un fichier `.buildpacks` à la racine du projet
+contenant :
 
 ```
 https://github.com/Scalingo/nodejs-buildpack.git
