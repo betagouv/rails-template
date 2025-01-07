@@ -14,6 +14,7 @@ services:
       - db
   css-watcher:
     image: beta-rails-template
+    entrypoint: ''
     volumes:
       - "./:/app"
       - "/app/node_modules"
