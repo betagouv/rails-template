@@ -1,6 +1,6 @@
 # Beta x Rails
 
-![Capture d’écran 2024-07-09 à 12 02 42](https://github.com/betagouv/rails-template/assets/107635/51592c9e-3f74-4384-9561-354c7085b16b)
+![./screenshot.png](./screenshot.png)
 
 
 ## Introduction
