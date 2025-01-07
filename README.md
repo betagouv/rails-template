@@ -19,7 +19,7 @@ La base de données est configurée avec PostgreSQL.
 ## Démarrage
 
 ```shell
-docker-compose up
+make up
 ```
 
 ## Environnement
