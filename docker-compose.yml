@@ -1,16 +1,23 @@
 services:
   web:
     build: .
-    volumes:
-      - "./:/app"
-      - "/app/node_modules"
+    image: beta-rails-template
+    env_file:
+       - '.env.local'
     ports:
       - "3000:3000"
       - "12345:12345"
-    env_file:
-       - '.env.local'
+    volumes:
+      - "./:/app"
+      - "/app/node_modules"
     depends_on:
       - db
+  css-watcher:
+    image: beta-rails-template
+    volumes:
+      - "./:/app"
+      - "/app/node_modules"
+    command: ["./bin/rails", "dartsass:watch"]
   db:
     # if you use Scalingo, stick to postgres:15
     # https://doc.scalingo.com/databases/postgresql/overview#life-cycle
