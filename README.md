@@ -1,5 +1,6 @@
 # Beta x Rails
 
+**NOTE** : CE REPO EST OBSOLÈTE/ARCHIVÉ. Une nouvelle version utilisant un vrai générateur est disponible sur https://github.com/betagouv/new-rails-template.
 ![./screenshot.png](./screenshot.png)
 
 
